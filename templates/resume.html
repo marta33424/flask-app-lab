@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="resume-wrapper">
+    <header class="resume-header custom-card p-4 p-md-5 mb-4 border-0">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-auto text-center">
+                <img src="{{ url_for('static', filename='images/photo.jpg') }}" alt="Фото профілю"
+                    class="rounded-circle profile-img">
+            </div>
+            <div class="col-12 col-md">
+                <h1 class="display-5 fw-bold text-dark mb-1">Марта Магир</h1>
+                <p class="h4 text-primary fw-semibold mb-3">Trainee / Junior Frontend Developer</p>
+                <div class="d-flex flex-wrap gap-4 text-secondary fs-6">
+                    <span><i class="bi bi-geo-alt-fill text-danger me-1"></i> Україна</span>
+                    <span><i class="bi bi-mortarboard-fill text-primary me-1"></i> КНУ ім. В. Стефаника</span>
+                    <span><i class="bi bi-code-slash text-success me-1"></i> Frontend Development</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <section id="about" class="custom-card p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-person-lines-fill me-2 text-primary"></i>Про себе</h2>
+                <p class="fs-5 text-secondary">
+                    Студентка спеціальності «Інженерія програмного забезпечення», яка цілеспрямовано розвивається у
+                    напрямку Frontend-розробки. Захоплююся створенням сучасних, адаптивних та візуально охайних
+                    вебінтерфейсів.
+                </p>
+                <p class="fs-5 text-secondary mb-0">
+                    У роботі приділяю увагу чистоті коду, семантиці HTML5, гнучкій стилізації за допомогою CSS3 та
+                    інтерактивності інтерфейсу на чистому JavaScript. Прагну вдосконалювати практичні навички верстки та
+                    створення зручного користувацького досвіду (UI/UX).
+                </p>
+            </section>
+
+            <section id="projects" class="custom-card p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-kanban me-2 text-primary"></i>Досвід роботи / Проекти</h2>
+
+                <article class="project-item mb-4 pb-4 border-bottom">
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                        <h3 class="h4 fw-bold text-dark mb-0">Інтерактивний вебдодаток «Task Manager»</h3>
+                        <span class="badge bg-warning text-dark fs-6 px-3 py-2">JavaScript / DOM</span>
+                    </div>
+                    <p class="text-secondary fs-6 mb-2">
+                        Клієнтський застосунок для планування щоденних завдань зі збереженням стану в браузері:
+                    </p>
+                    <ul class="text-secondary fs-6 ps-4 mb-0">
+                        <li class="mb-1">Динамічне додавання, редагування, відмітка про виконання та видалення пунктів
+                            без перезавантаження сторінки.</li>
+                        <li class="mb-1">Робота з подіями миші й клавіатури, маніпуляція деревом елементів (DOM).</li>
+                        <li>Збереження списку справ у пам'яті браузера (`localStorage`), щоб дані залишалися після
+                            оновлення вкладки.</li>
+                    </ul>
+                </article>
+
+                <article class="project-item mb-4 pb-4 border-bottom">
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                        <h3 class="h4 fw-bold text-dark mb-0">Адаптивний лендінг-каталог товарів</h3>
+                        <span class="badge bg-info text-dark fs-6 px-3 py-2">HTML5 / CSS Grid / Flexbox</span>
+                    </div>
+                    <p class="text-secondary fs-6 mb-2">
+                        Сучасна багатосекційна сторінка-вітрина з повною адаптивністю під різні пристрої:
+                    </p>
+                    <ul class="text-secondary fs-6 ps-4 mb-0">
+                        <li class="mb-1">Побудова складної сітки карток за допомогою CSS Grid та вирівнювання блоків
+                            через Flexbox.</li>
+                        <li class="mb-1">Адаптивність під смартфони та планшети (медіа-запити `@media`, мобільне
+                            меню-бургер).</li>
+                        <li>Інтерактивна валідація форми замовлення за допомогою JavaScript (перевірка формату пошти та
+                            заповнення полів).</li>
+                    </ul>
+                </article>
+
+                <article class="project-item">
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                        <h3 class="h4 fw-bold text-dark mb-0">Багатосторінковий вебсайт-портфоліо</h3>
+                        <span class="badge bg-primary fs-6 px-3 py-2">HTML5 / Bootstrap 5 / Git</span>
+                    </div>
+                    <p class="text-secondary fs-6 mb-2">
+                        Персональний вебресурс із модульною структурою та інтерактивними формами:
+                    </p>
+                    <ul class="text-secondary fs-6 ps-4 mb-0">
+                        <li class="mb-1">Семантична розмітка сторінок.</li>
+                        <li class="mb-1">Стилізація за допомогою бібліотеки Bootstrap 5 та власних CSS-класів.</li>
+                        <li>Швидка внутрішня навігація за якірними посиланнями та ведення розробки в окремій гілці Git.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="education" class="custom-card p-4">
+                <h2 class="section-title"><i class="bi bi-bank me-2 text-primary"></i>Освіта</h2>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2">
+                    <div>
+                        <h3 class="h5 fw-bold mb-1">Карпатський національний університет імені Василя Стефаника</h3>
+                        <p class="text-primary fw-medium mb-1 fs-5">Спеціальність 121 «Інженерія програмного
+                            забезпечення»</p>
+                        <p class="text-muted mb-0">Факультет математики та інформатики • Бакалаврат</p>
+                    </div>
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle fs-6 px-3 py-2">2024
+                        — Теперішній час</span>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-4">
+            <section id="technologies" class="custom-card p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-cpu me-2 text-primary"></i>Технології</h2>
+
+                <div class="mb-4">
+                    <h3 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.8rem; letter-spacing: 1px;">
+                        Frontend Core</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="tech-badge">HTML5 (Семантика)</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Bootstrap 5</span>
+                        <span class="tech-badge">Flexbox / Grid</span>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.8rem; letter-spacing: 1px;">
+                        Базові знання</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="tech-badge">Python (Flask маршрути)</span>
+                        <span class="tech-badge">SQL (Базові запити)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-uppercase text-muted fw-bold mb-2" style="font-size: 0.8rem; letter-spacing: 1px;">
+                        Інструменти</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="tech-badge">Git & GitHub</span>
+                        <span class="tech-badge">VS Code</span>
+                        <span class="tech-badge">Chrome DevTools</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="custom-card p-4 mb-4">
+                <h2 class="section-title"><i class="bi bi-lightning-charge me-2 text-primary"></i>Навички</h2>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Адаптивна та семантична верстка</span>
+                    </li>
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Маніпуляція DOM-елементами в JS</span>
+                    </li>
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Створення мобільних меню та форм</span>
+                    </li>
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Клієнтська валідація введених даних</span>
+                    </li>
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Робота з гілками та комітами у Git</span>
+                    </li>
+                    <li class="skill-item d-flex align-items-center gap-3">
+                        <i class="bi bi-check-circle-fill skill-icon"></i>
+                        <span>Кросбраузерне тестування сторінок</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="languages" class="custom-card p-4">
+                <h2 class="section-title"><i class="bi bi-translate me-2 text-primary"></i>Мови</h2>
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="fw-bold text-dark d-block">Українська</span>
+                            <span class="text-muted small">Рідна мова</span>
+                        </div>
+                        <span
+                            class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 fw-semibold">Native</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="fw-bold text-dark d-block">Англійська</span>
+                            <span class="text-muted small">Читання технічної документації</span>
+                        </div>
+                        <span
+                            class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 fw-semibold">B2
+                            (Upper-Intermediate)</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
