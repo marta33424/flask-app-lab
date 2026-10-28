@@ -3,8 +3,98 @@
 {% block title %}Профіль{% endblock %}
 
 {% block content %}
+{% if theme == 'dark' %}
+<style>
+    html,
+    body,
+    main,
+    .content,
+    #content,
+    .wrapper,
+    footer,
+    .footer {
+        background-color: #161824 !important;
+        background-image: none !important;
+        color: #ffffff !important;
+    }
+
+    h3,
+    h5,
+    label,
+    p,
+    span,
+    .form-label {
+        color: #f1f5f9 !important;
+    }
+
+    footer p,
+    footer span,
+    .footer p,
+    .footer span {
+        color: #94a3b8 !important;
+    }
+
+    .text-muted {
+        color: #94a3b8 !important;
+    }
+
+    /* Темні поля вводу */
+    .form-control {
+        background-color: #212534 !important;
+        color: #ffffff !important;
+        border: 1px solid #3b4256 !important;
+    }
+
+    .form-control:focus {
+        background-color: #262c3e !important;
+        color: #ffffff !important;
+        border-color: #0078d4 !important;
+        box-shadow: 0 0 0 0.25rem rgba(0, 120, 212, 0.25) !important;
+    }
+
+    .form-control::placeholder {
+        color: #64748b !important;
+    }
+
+    .table {
+        color: #ffffff !important;
+        border-color: #3b4256 !important;
+    }
+
+    .table-light th,
+    .table thead th {
+        background-color: #212534 !important;
+        color: #ffffff !important;
+        border-color: #3b4256 !important;
+    }
+
+    .table td {
+        background-color: #1a1d2b !important;
+        color: #ffffff !important;
+        border-color: #3b4256 !important;
+    }
+
+    hr {
+        border-color: #3b4256 !important;
+    }
+</style>
+{% endif %}
+
 <div class="container my-4" style="max-width: 900px;">
-    <!-- Блок привітання -->
+    <div class="d-flex justify-content-end align-items-center mb-3">
+        <span class="me-2 fw-bold small">Тема:</span>
+        <div class="btn-group" role="group">
+            <a href="{{ url_for('users.change_theme', theme_name='light') }}"
+                class="btn btn-sm {% if theme == 'light' %}btn-secondary active{% else %}btn-outline-secondary text-white{% endif %}">
+                ☀️ Світла
+            </a>
+            <a href="{{ url_for('users.change_theme', theme_name='dark') }}"
+                class="btn btn-sm {% if theme == 'dark' %}btn-light active{% else %}btn-outline-light{% endif %}">
+                🌙 Темна
+            </a>
+        </div>
+    </div>
+
     <div class="p-3 mb-3 text-white rounded d-flex align-items-center justify-content-between"
         style="background-color: #0078d4;">
         <h3 class="m-0">Ласкаво просимо до сторінки</h3>
@@ -21,7 +111,6 @@
 
     <hr>
 
-    <!-- Додати кукі -->
     <h5 class="fw-bold">Додати кукі:</h5>
     <form action="{{ url_for('users.add_cookie') }}" method="POST" class="mb-4">
         <div class="row g-3">
@@ -42,7 +131,6 @@
             style="background-color: #00875a; border: none;">Додати кукі</button>
     </form>
 
-    <!-- Видалити кукі за ключем -->
     <h5 class="fw-bold">Видалити кукі за ключем:</h5>
     <form action="{{ url_for('users.delete_cookie') }}" method="POST" class="mb-4">
         <div class="mb-2" style="max-width: 500px;">
@@ -53,15 +141,13 @@
             style="background-color: #ffab00; border: none;">Видалити кукі за ключем</button>
     </form>
 
-    <!-- Видалити всі кукі -->
     <h5 class="fw-bold">Видалити всі кукі:</h5>
     <form action="{{ url_for('users.delete_all_cookies') }}" method="POST" class="mb-4">
         <button type="submit" class="btn btn-danger btn-sm">Видалити всі кукі</button>
     </form>
 
-    <!-- Таблиця списку всіх кукі -->
     <h5 class="fw-bold mt-4">Список всіх кукі:</h5>
-    <table class="table table-bordered table-striped mt-2">
+    <table class="table table-bordered mt-2">
         <thead class="table-light">
             <tr>
                 <th style="width: 30%;">Ключ</th>

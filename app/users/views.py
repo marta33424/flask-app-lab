@@ -37,7 +37,13 @@ def profile():
         flash("Будь ласка, спочатку увійдіть у систему.", "error")
         return redirect(url_for("users.login"))
 
-    return render_template("profile.html", username=session["username"], cookies=request.cookies)
+    current_theme = request.cookies.get("theme", "light")
+    return render_template(
+        "profile.html", 
+        username=session["username"], 
+        cookies=request.cookies,
+        theme=current_theme
+    )
 
 @users_bp.route("/logout", methods=["POST", "GET"])
 def logout():
@@ -94,4 +100,18 @@ def delete_all_cookies():
             response.delete_cookie(key)
 
     flash("Всі додані кукі успішно видалено!", "info")
+    return response
+
+
+@users_bp.route("/change-theme/<string:theme_name>")
+def change_theme(theme_name):
+    if "username" not in session:
+        return redirect(url_for("users.login"))
+
+    if theme_name not in ["light", "dark"]:
+        theme_name = "light"
+
+    response = make_response(redirect(url_for("users.profile")))
+    response.set_cookie("theme", theme_name, max_age=30 * 24 * 60 * 60)
+    flash(f"Тему змінено на {theme_name}!", "info")
     return response
