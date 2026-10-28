@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for, flash, session
+from flask import render_template, request, redirect, url_for, flash, session, make_response
 from . import users_bp
 
 @users_bp.route("/hi/<string:name>")
@@ -37,10 +37,61 @@ def profile():
         flash("Будь ласка, спочатку увійдіть у систему.", "error")
         return redirect(url_for("users.login"))
 
-    return render_template("profile.html", username=session["username"])
+    return render_template("profile.html", username=session["username"], cookies=request.cookies)
 
 @users_bp.route("/logout", methods=["POST", "GET"])
 def logout():
     session.pop("username", None)
     flash("Ви успішно вийшли з системи.", "info")
     return redirect(url_for("users.login"))
+
+@users_bp.route("/cookies/add", methods=["POST"])
+def add_cookie():
+    if "username" not in session:
+        return redirect(url_for("users.login"))
+
+    key = request.form.get("key", "").strip()
+    value = request.form.get("value", "").strip()
+    max_age = request.form.get("max_age", "").strip()
+
+    if not key:
+        flash("Ключ кукі не може бути порожнім!", "error")
+        return redirect(url_for("users.profile"))
+
+    response = make_response(redirect(url_for("users.profile")))
+    try:
+        max_age_val = int(max_age) if max_age else None
+    except ValueError:
+        max_age_val = None
+
+    response.set_cookie(key, value, max_age=max_age_val)
+    flash(f"Кукі '{key}' успішно додано!", "success")
+    return response
+
+@users_bp.route("/cookies/delete", methods=["POST"])
+def delete_cookie():
+    if "username" not in session:
+        return redirect(url_for("users.login"))
+
+    key = request.form.get("key", "").strip()
+    if not key:
+        flash("Вкажіть ключ кукі для видалення!", "error")
+        return redirect(url_for("users.profile"))
+
+    response = make_response(redirect(url_for("users.profile")))
+    response.delete_cookie(key)
+    flash(f"Кукі '{key}' успішно видалено!", "info")
+    return response
+
+@users_bp.route("/cookies/delete_all", methods=["POST"])
+def delete_all_cookies():
+    if "username" not in session:
+        return redirect(url_for("users.login"))
+
+    response = make_response(redirect(url_for("users.profile")))
+    for key in request.cookies.keys():
+        if key != "session":
+            response.delete_cookie(key)
+
+    flash("Всі додані кукі успішно видалено!", "info")
+    return response
