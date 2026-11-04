@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from '_macros.html' import render_field %}
 
 {% block content %}
 <div class="row g-4 align-items-stretch py-3">
@@ -42,31 +43,19 @@
     </div>
 
     <div class="col-lg-7">
-        <div class="card form-card p-4 p-md-5 h-100 bg-white">
+        <div class="card form-card p-4 p-md-5 h-100 bg-white shadow-sm rounded-4">
             <h2 class="h3 fw-bold text-dark mb-4">Надіслати повідомлення</h2>
 
-            <form action="#" method="post">
-                <div class="mb-3">
-                    <label for="name" class="form-label fw-semibold text-secondary">Ваше ім'я</label>
-                    <input type="text" class="form-control" id="name" name="name" required
-                        placeholder="Як до вас звертатися?">
-                </div>
+            <form action="{{ url_for('contacts') }}" method="post" novalidate>
+                {{ form.hidden_tag() }}
 
-                <div class="mb-3">
-                    <label for="email" class="form-label fw-semibold text-secondary">Електронна пошта</label>
-                    <input type="email" class="form-control" id="email" name="email" required
-                        placeholder="ваша_пошта@example.com">
-                </div>
+                {{ render_field(form.name, placeholder="Як до вас звертатися?") }}
+                {{ render_field(form.email, placeholder="ваша_пошта@example.com") }}
+                {{ render_field(form.phone, placeholder="+380XXXXXXXXX") }}
+                {{ render_field(form.subject, class="form-select") }}
+                {{ render_field(form.message, rows=5, placeholder="Напишіть ваше повідомлення або запитання тут...") }}
 
-                <div class="mb-4">
-                    <label for="message" class="form-label fw-semibold text-secondary">Ваше повідомлення</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" required
-                        placeholder="Напишіть ваше повідомлення або запитання тут..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-custom w-100">
-                    <i class="bi bi-send-fill me-2"></i>Надіслати повідомлення
-                </button>
+                {{ form.submit(class="btn btn-primary w-100 py-2") }}
             </form>
         </div>
     </div>

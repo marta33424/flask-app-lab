@@ -1,0 +1,16 @@
+{% macro render_field(field, class="") %}
+<div class="mb-3">
+    {{ field.label(class="form-label fw-semibold text-secondary") }}
+    
+    {% set input_class = class if class else ("form-select" if field.type == 'SelectField' else "form-control") %}
+    
+    {% if field.errors %}
+        {{ field(class=input_class + " is-invalid", **kwargs) }}
+        {% for error in field.errors %}
+            <div class="invalid-feedback d-block">{{ error }}</div>
+        {% endfor %}
+    {% else %}
+        {{ field(class=input_class, **kwargs) }}
+    {% endif %}
+</div>
+{% endmacro %}
