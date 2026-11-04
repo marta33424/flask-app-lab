@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import render_field %}
+
+{% block content %}
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm p-4 bg-white">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2 class="h3 fw-bold mb-0">{{ title }}</h2>
+                    <a href="{{ url_for('products.product_list') }}" class="btn btn-outline-secondary btn-sm">
+                        До списку товарів
+                    </a>
+                </div>
+
+                <form method="post" enctype="multipart/form-data" novalidate>
+                    {{ form.hidden_tag() }}
+
+                    {{ render_field(form.name, placeholder="Введіть назву товару (від 3 символів)") }}
+                    {{ render_field(form.content, placeholder="Введіть детальний опис товару...") }}
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            {{ render_field(form.price, placeholder="Наприклад: 1299.99") }}
+                        </div>
+                        <div class="col-md-4">
+                            {{ render_field(form.category, class="form-select") }}
+                        </div>
+                        <div class="col-md-4">
+                            {{ render_field(form.quantity, placeholder="0") }}
+                        </div>
+                    </div>
+
+                    {% if product and product.image %}
+                    <div class="mb-3">
+                        <label class="form-label text-muted d-block">Поточне зображення:</label>
+                        <img src="{{ url_for('static', filename=product.image) }}" alt="{{ product.name }}"
+                            style="max-height: 120px;" class="img-thumbnail">
+                    </div>
+                    {% endif %}
+
+                    {{ render_field(form.image) }}
+
+                    <div class="d-flex gap-2 mt-4">
+                        {{ form.submit(class="btn btn-primary px-4") }}
+                        <a href="{{ url_for('products.product_list') }}" class="btn btn-light border">Скасувати</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

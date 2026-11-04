@@ -1,0 +1,205 @@
+2026-10-29 18:02:59,663 - WARNING -  * Debugger is active!
+2026-10-29 18:02:59,667 - INFO -  * Debugger PIN: 129-618-912
+2026-10-29 18:03:01,714 - INFO -  * Detected change in 'D:\\flask_app_mahyr\\app\\views.py', reloading
+2026-10-29 18:03:02,069 - WARNING -  * Debugger is active!
+2026-10-29 18:03:02,073 - INFO -  * Debugger PIN: 129-618-912
+2026-10-29 18:03:06,145 - INFO -  * Detected change in 'D:\\flask_app_mahyr\\app\\views.py', reloading
+2026-10-29 18:03:06,492 - WARNING -  * Debugger is active!
+2026-10-29 18:03:06,496 - INFO -  * Debugger PIN: 129-618-912
+2026-10-29 18:05:10,889 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-29 18:05:10,891 - INFO - Press CTRL+C to quit
+2026-10-29 18:05:10,892 - INFO -  * Restarting with stat
+2026-10-29 18:05:11,196 - WARNING -  * Debugger is active!
+2026-10-29 18:05:11,201 - INFO -  * Debugger PIN: 129-618-912
+2026-10-29 18:05:35,709 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-10-29 18:05:35,709 - INFO - Press CTRL+C to quit
+2026-10-29 18:05:35,710 - INFO -  * Restarting with stat
+2026-10-29 18:05:36,004 - WARNING -  * Debugger is active!
+2026-10-29 18:05:36,008 - INFO -  * Debugger PIN: 129-618-912
+2026-10-29 18:06:17,978 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:17] "GET / HTTP/1.1" 200 -
+2026-10-29 18:06:18,067 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:18] "GET /static/images/photo.jpg HTTP/1.1" 304 -
+2026-10-29 18:06:18,068 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:18] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:06:19,574 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:19] "GET /contacts HTTP/1.1" 200 -
+2026-10-29 18:06:19,596 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:19] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:06:57,312 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:57] "POST /contacts HTTP/1.1" 200 -
+2026-10-29 18:06:57,334 - INFO - 127.0.0.1 - - [29/Oct/2026 18:06:57] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:08:04,741 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:04] "POST /contacts HTTP/1.1" 200 -
+2026-10-29 18:08:04,764 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:04] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:08:08,585 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:08] "POST /contacts HTTP/1.1" 200 -
+2026-10-29 18:08:08,607 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:08:17,305 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:17] "POST /contacts HTTP/1.1" 200 -
+2026-10-29 18:08:17,327 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:17] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:08:25,554 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:25] "POST /contacts HTTP/1.1" 200 -
+2026-10-29 18:08:25,579 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:25] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-10-29 18:08:52,157 - INFO - Нове повідомлення: Name='Марта', Email='ddjjd@fl.ck', Phone='+380200000000', Subject='cooperation', Message='daidoadodoad'
+2026-10-29 18:08:52,158 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:52] "POST /contacts HTTP/1.1" 302 -
+2026-10-29 18:08:52,164 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:52] "GET /contacts HTTP/1.1" 200 -
+2026-10-29 18:08:52,191 - INFO - 127.0.0.1 - - [29/Oct/2026 18:08:52] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:42:35,396 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 22:42:35,396 [INFO] Press CTRL+C to quit
+2026-11-04 22:42:35,399 [INFO]  * Restarting with stat
+2026-11-04 22:42:35,727 [WARNING]  * Debugger is active!
+2026-11-04 22:42:35,731 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 22:45:53,061 [INFO] 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:45:53,127 [INFO] 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-04 22:45:53,924 [INFO] 127.0.0.1 - - [04/Nov/2026 22:45:53] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-04 22:46:03,688 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:03] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:46:03,710 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:03] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:04,993 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:04] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:46:05,011 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:05] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:06,733 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:06] "GET /resume HTTP/1.1" 200 -
+2026-11-04 22:46:06,751 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:06] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:46:06,752 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:06] "GET /static/images/photo.jpg HTTP/1.1" 200 -
+2026-11-04 22:46:08,544 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:08] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:46:08,563 [INFO] 127.0.0.1 - - [04/Nov/2026 22:46:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:48:38,393 [INFO] 127.0.0.1 - - [04/Nov/2026 22:48:38] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:48:38,411 [INFO] 127.0.0.1 - - [04/Nov/2026 22:48:38] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:50:43,305 [INFO] 127.0.0.1 - - [04/Nov/2026 22:50:43] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:50:43,322 [INFO] 127.0.0.1 - - [04/Nov/2026 22:50:43] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:51:21,611 [INFO] 127.0.0.1 - - [04/Nov/2026 22:51:21] "POST /contacts HTTP/1.1" 200 -
+2026-11-04 22:51:21,631 [INFO] 127.0.0.1 - - [04/Nov/2026 22:51:21] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:52:21,733 [INFO] Нове повідомлення: Name='Marta', Email='marta.mahyr.24@pnu.edu.ua', Phone='+380991234567', Subject='cooperation', Message='тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст тестовий текст '
+2026-11-04 22:52:21,734 [INFO] 127.0.0.1 - - [04/Nov/2026 22:52:21] "POST /contacts HTTP/1.1" 302 -
+2026-11-04 22:52:21,739 [INFO] 127.0.0.1 - - [04/Nov/2026 22:52:21] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:52:21,763 [INFO] 127.0.0.1 - - [04/Nov/2026 22:52:21] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:55:11,835 [INFO] 127.0.0.1 - - [04/Nov/2026 22:55:11] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:55:11,852 [INFO] 127.0.0.1 - - [04/Nov/2026 22:55:11] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:55:13,908 [INFO] 127.0.0.1 - - [04/Nov/2026 22:55:13] "POST /contacts HTTP/1.1" 200 -
+2026-11-04 22:55:13,928 [INFO] 127.0.0.1 - - [04/Nov/2026 22:55:13] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:56:03,611 [INFO] 127.0.0.1 - - [04/Nov/2026 22:56:03] "POST /contacts HTTP/1.1" 200 -
+2026-11-04 22:56:03,632 [INFO] 127.0.0.1 - - [04/Nov/2026 22:56:03] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 22:56:09,603 [INFO] Нове повідомлення: Name='Марта', Email='marta.mahyr.24@pnu.edu.ua', Phone='+380991234567', Subject='tech_support', Message='тестовий текст'
+2026-11-04 22:56:09,604 [INFO] 127.0.0.1 - - [04/Nov/2026 22:56:09] "POST /contacts HTTP/1.1" 302 -
+2026-11-04 22:56:09,610 [INFO] 127.0.0.1 - - [04/Nov/2026 22:56:09] "GET /contacts HTTP/1.1" 200 -
+2026-11-04 22:56:09,630 [INFO] 127.0.0.1 - - [04/Nov/2026 22:56:09] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:24:17,193 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 23:24:17,193 [INFO] Press CTRL+C to quit
+2026-11-04 23:25:08,080 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 23:25:08,080 [INFO] Press CTRL+C to quit
+2026-11-04 23:25:08,082 [INFO]  * Restarting with stat
+2026-11-04 23:25:08,374 [WARNING]  * Debugger is active!
+2026-11-04 23:25:08,378 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:25:25,467 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 23:25:25,467 [INFO] Press CTRL+C to quit
+2026-11-04 23:25:25,469 [INFO]  * Restarting with stat
+2026-11-04 23:25:25,768 [WARNING]  * Debugger is active!
+2026-11-04 23:25:25,772 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:26:20,789 [INFO] 127.0.0.1 - - [04/Nov/2026 23:26:20] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:26:20,855 [INFO] 127.0.0.1 - - [04/Nov/2026 23:26:20] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:27:27,180 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 23:27:27,180 [INFO] Press CTRL+C to quit
+2026-11-04 23:27:27,181 [INFO]  * Restarting with stat
+2026-11-04 23:27:27,485 [WARNING]  * Debugger is active!
+2026-11-04 23:27:27,489 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:29:48,933 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 23:29:48,933 [INFO] Press CTRL+C to quit
+2026-11-04 23:29:48,935 [INFO]  * Restarting with stat
+2026-11-04 23:29:49,234 [WARNING]  * Debugger is active!
+2026-11-04 23:29:49,238 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:30:08,900 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8080
+2026-11-04 23:30:08,901 [INFO] Press CTRL+C to quit
+2026-11-04 23:30:08,902 [INFO]  * Restarting with stat
+2026-11-04 23:30:09,190 [WARNING]  * Debugger is active!
+2026-11-04 23:30:09,194 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:31:07,098 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-04 23:31:07,098 [INFO] Press CTRL+C to quit
+2026-11-04 23:31:07,100 [INFO]  * Restarting with stat
+2026-11-04 23:31:07,385 [WARNING]  * Debugger is active!
+2026-11-04 23:31:07,389 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:31:11,601 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:11] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:31:11,652 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:11] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:31:42,655 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:42] "GET /products/add HTTP/1.1" 500 -
+2026-11-04 23:31:42,674 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:42] "GET /products/add?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-11-04 23:31:42,675 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:42] "GET /products/add?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-11-04 23:31:42,687 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:42] "GET /products/add?__debugger__=yes&cmd=resource&f=console.png&s=Hyen2x3pjpfWZ7t0KNyb HTTP/1.1" 200 -
+2026-11-04 23:31:42,721 [INFO] 127.0.0.1 - - [04/Nov/2026 23:31:42] "GET /products/add?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-11-04 23:32:29,738 [INFO] 127.0.0.1 - - [04/Nov/2026 23:32:29] "GET /products/add HTTP/1.1" 200 -
+2026-11-04 23:32:29,756 [INFO] 127.0.0.1 - - [04/Nov/2026 23:32:29] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:33:34,917 [INFO] 127.0.0.1 - - [04/Nov/2026 23:33:34] "POST /products/add HTTP/1.1" 200 -
+2026-11-04 23:33:34,938 [INFO] 127.0.0.1 - - [04/Nov/2026 23:33:34] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:34:25,226 [INFO] 127.0.0.1 - - [04/Nov/2026 23:34:25] "POST /products/add HTTP/1.1" 200 -
+2026-11-04 23:34:25,245 [INFO] 127.0.0.1 - - [04/Nov/2026 23:34:25] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:37:54,406 [INFO] 127.0.0.1 - - [04/Nov/2026 23:37:54] "POST /products/add HTTP/1.1" 302 -
+2026-11-04 23:37:54,410 [INFO] 127.0.0.1 - - [04/Nov/2026 23:37:54] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:37:54,432 [INFO] 127.0.0.1 - - [04/Nov/2026 23:37:54] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:37:54,432 [INFO] 127.0.0.1 - - [04/Nov/2026 23:37:54] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 200 -
+2026-11-04 23:39:49,052 [INFO] 127.0.0.1 - - [04/Nov/2026 23:39:49] "GET /products/add HTTP/1.1" 200 -
+2026-11-04 23:39:49,071 [INFO] 127.0.0.1 - - [04/Nov/2026 23:39:49] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:40:08,799 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:08] "POST /products/add HTTP/1.1" 302 -
+2026-11-04 23:40:08,808 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:08] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:40:08,832 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:40:08,833 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:08] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:40:08,834 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:08] "GET /static/uploads/products/be094078193f42eaa04aed3d39e64b7c.jpg HTTP/1.1" 200 -
+2026-11-04 23:40:35,839 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:35] "GET /products/1 HTTP/1.1" 200 -
+2026-11-04 23:40:35,857 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:35] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:40:35,862 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:35] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:40:38,604 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:38] "GET /products/1/edit HTTP/1.1" 200 -
+2026-11-04 23:40:38,626 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:38] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:40:38,627 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:38] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:40:48,164 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:48] "GET /products/1/edit HTTP/1.1" 200 -
+2026-11-04 23:40:48,187 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:48] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:40:48,187 [INFO] 127.0.0.1 - - [04/Nov/2026 23:40:48] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:41:08,788 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:08] "POST /products/1/edit HTTP/1.1" 302 -
+2026-11-04 23:41:08,794 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:08] "GET /products/1 HTTP/1.1" 200 -
+2026-11-04 23:41:08,821 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:08] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:41:08,822 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:08] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:41:38,067 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:38] "GET /products/1/edit HTTP/1.1" 200 -
+2026-11-04 23:41:38,085 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:38] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:41:38,091 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:38] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:41:46,257 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:46] "POST /products/1/edit HTTP/1.1" 302 -
+2026-11-04 23:41:46,267 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:46] "GET /products/1 HTTP/1.1" 200 -
+2026-11-04 23:41:46,295 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:46] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:41:46,295 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:46] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:41:56,043 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:56] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:41:56,064 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:56] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:41:56,067 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:56] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:41:56,068 [INFO] 127.0.0.1 - - [04/Nov/2026 23:41:56] "GET /static/uploads/products/be094078193f42eaa04aed3d39e64b7c.jpg HTTP/1.1" 304 -
+2026-11-04 23:42:00,227 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:00] "GET /products/1 HTTP/1.1" 200 -
+2026-11-04 23:42:00,245 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:00] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:42:00,249 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:00] "GET /static/uploads/products/ae178767ffd446188a557767ba7af956.jpg HTTP/1.1" 304 -
+2026-11-04 23:42:03,652 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:03] "POST /products/1/delete HTTP/1.1" 302 -
+2026-11-04 23:42:03,657 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:03] "GET /products/ HTTP/1.1" 200 -
+2026-11-04 23:42:03,677 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:03] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-04 23:42:03,683 [INFO] 127.0.0.1 - - [04/Nov/2026 23:42:03] "GET /static/uploads/products/be094078193f42eaa04aed3d39e64b7c.jpg HTTP/1.1" 304 -
+2026-11-04 23:43:52,825 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\app\\__init__.py', reloading
+2026-11-04 23:43:52,858 [INFO]  * Restarting with stat
+2026-11-04 23:43:53,173 [WARNING]  * Debugger is active!
+2026-11-04 23:43:53,177 [INFO]  * Debugger PIN: 117-103-305
+2026-11-04 23:44:02,232 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\app\\__init__.py', reloading
+2026-11-04 23:44:02,263 [INFO]  * Restarting with stat
+2026-11-04 23:44:02,573 [WARNING]  * Debugger is active!
+2026-11-04 23:44:02,577 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:02,789 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:02,825 [INFO]  * Restarting with stat
+2026-11-05 00:01:03,173 [WARNING]  * Debugger is active!
+2026-11-05 00:01:03,177 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:08,213 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:08,241 [INFO]  * Restarting with stat
+2026-11-05 00:01:08,536 [WARNING]  * Debugger is active!
+2026-11-05 00:01:08,540 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:14,579 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:14,616 [INFO]  * Restarting with stat
+2026-11-05 00:01:14,946 [WARNING]  * Debugger is active!
+2026-11-05 00:01:14,950 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:16,972 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:17,002 [INFO]  * Restarting with stat
+2026-11-05 00:01:17,308 [WARNING]  * Debugger is active!
+2026-11-05 00:01:17,312 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:19,335 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:19,362 [INFO]  * Restarting with stat
+2026-11-05 00:01:19,657 [WARNING]  * Debugger is active!
+2026-11-05 00:01:19,661 [INFO]  * Debugger PIN: 117-103-305
+2026-11-05 00:01:21,683 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\tests\\test_product_bp.py', reloading
+2026-11-05 00:01:21,712 [INFO]  * Restarting with stat
+2026-11-05 00:01:22,010 [WARNING]  * Debugger is active!
+2026-11-05 00:01:22,014 [INFO]  * Debugger PIN: 117-103-305

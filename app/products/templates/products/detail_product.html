@@ -4,14 +4,50 @@
 
 {% block content %}
 <div class="container my-4">
-    <div class="card shadow-sm p-4 col-md-8 mx-auto">
-        <h2 class="text-primary">{{ product.name }}</h2>
-        <h4 class="text-success my-3">Ціна: ${{ product.price }}</h4>
-        <p class="fs-5 text-secondary">{{ product.content }}</p>
-        <div class="mt-4">
-            <a href="{{ url_for('products.product_list') }}" class="btn btn-secondary">
-                ← Назад до каталогу
-            </a>
+
+    <div class="card shadow-sm p-4 col-md-8 mx-auto bg-white">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-5">
+                {% if product.image %}
+                    <img src="{{ url_for('static', filename=product.image) }}" class="img-fluid rounded shadow-sm w-100" alt="{{ product.name }}" style="object-fit: cover; max-height: 280px;">
+                {% else %}
+                    <div class="bg-light rounded d-flex align-items-center justify-content-center text-muted border" style="height: 240px;">
+                        <span>Немає зображення</span>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="col-md-7">
+                <span class="badge bg-secondary mb-2">{{ product.category }}</span>
+                <h2 class="text-primary fw-bold mb-2">{{ product.name }}</h2>
+                <h4 class="text-success fw-semibold mb-3">{{ "%.2f"|format(product.price) }} грн</h4>
+                
+                <div class="mb-3">
+                    <h6 class="fw-bold text-secondary mb-1">Опис:</h6>
+                    <p class="text-muted" style="white-space: pre-line;">{{ product.content }}</p>
+                </div>
+
+                <ul class="list-unstyled text-secondary small mb-4">
+                    <li><strong>Кількість на складі:</strong> {{ product.quantity }} шт.</li>
+                    <li><strong>Дата створення:</strong> {{ product.created_at }}</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2 pt-2 border-top">
+                    <a href="{{ url_for('products.product_edit', id=product.id) }}" class="btn btn-warning">
+                        Редагувати
+                    </a>
+
+                    <form action="{{ url_for('products.product_delete', id=product.id) }}" method="post" onsubmit="return confirm('Ви дійсно бажаєте видалити цей товар?');" class="d-inline">
+                        <button type="submit" class="btn btn-danger">
+                            Видалити
+                        </button>
+                    </form>
+
+                    <a href="{{ url_for('products.product_list') }}" class="btn btn-outline-secondary ms-auto">
+                        ← До каталогу
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
