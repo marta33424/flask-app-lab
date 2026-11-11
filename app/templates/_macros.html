@@ -1,16 +1,35 @@
 {% macro render_field(field, class="") %}
-<div class="mb-3">
-    {{ field.label(class="form-label fw-semibold text-secondary") }}
-    
-    {% set input_class = class if class else ("form-select" if field.type == 'SelectField' else "form-control") %}
-    
+{% if field.type == 'BooleanField' %}
+<div class="mb-3 form-check">
+    {% set check_class = class if class else "form-check-input" %}
     {% if field.errors %}
-        {{ field(class=input_class + " is-invalid", **kwargs) }}
-        {% for error in field.errors %}
-            <div class="invalid-feedback d-block">{{ error }}</div>
-        {% endfor %}
+    {{ field(class=check_class + " is-invalid", **kwargs) }}
     {% else %}
-        {{ field(class=input_class, **kwargs) }}
+    {{ field(class=check_class, **kwargs) }}
+    {% endif %}
+    {{ field.label(class="form-check-label fw-semibold text-secondary") }}
+
+    {% for error in field.errors %}
+    <div class="invalid-feedback d-block">{{ error }}</div>
+    {% endfor %}
+</div>
+{% else %}
+<div class="mb-3">
+    {% if field.type != 'CSRFTokenField' and field.type != 'SubmitField' %}
+    {{ field.label(class="form-label fw-semibold text-secondary") }}
+    {% endif %}
+
+    {% set default_class = "form-select" if field.type == 'SelectField' else "form-control" %}
+    {% set input_class = class if class else default_class %}
+
+    {% if field.errors %}
+    {{ field(class=input_class + " is-invalid", **kwargs) }}
+    {% for error in field.errors %}
+    <div class="invalid-feedback d-block">{{ error }}</div>
+    {% endfor %}
+    {% else %}
+    {{ field(class=input_class, **kwargs) }}
     {% endif %}
 </div>
+{% endif %}
 {% endmacro %}
