@@ -1,0 +1,38 @@
+.myclass {
+    background: #a3e635;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #1e1b4b;
+    margin-bottom: 25px;
+}
+
+.post-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.12);
+}
+
+.post-card img {
+    height: 160px;
+    object-fit: cover;
+    background-color: #f8fafc;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #64748b;
+}
