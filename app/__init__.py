@@ -4,13 +4,20 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
 from flask_migrate import Migrate
 from dotenv import load_dotenv
+from sqlalchemy import MetaData
 
 from .config import config_map
 
 load_dotenv()
 
 class Base(DeclarativeBase):
-    pass
+    metadata = MetaData(naming_convention={
+        "ix": 'ix_%(column_0_label)s',
+        "uq": "uq_%(table_name)s_%(column_0_name)s",
+        "ck": "ck_%(table_name)s_%(constraint_name)s",
+        "fk": "fk_%(table_name)s_%(column_0_name)s_%(referred_table_name)s",
+        "pk": "pk_%(table_name)s"
+    })
 
 db = SQLAlchemy(model_class=Base)
 migrate = Migrate()
@@ -27,6 +34,7 @@ def create_app(config_name: str = None) -> Flask:
 
     # Імпорт моделей для реєстрації в метаданих Alembic
     from .posts.models import Post
+    from app.products.models import Product
 
     # Реєстрація блюпринтів
     from .views import main as main_blueprint
@@ -37,6 +45,9 @@ def create_app(config_name: str = None) -> Flask:
 
     from .posts import post_bp
     app.register_blueprint(post_bp, url_prefix="/post")
+
+    #from app.products.views import products_bp
+    #app.register_blueprint(products_bp, url_prefix="/products")
 
     @app.errorhandler(404)
     def not_found(e):
