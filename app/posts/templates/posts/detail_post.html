@@ -3,10 +3,25 @@
 {% block content %}
 <div class="container mt-4">
     <h2>{{ post.title }}</h2>
-    <p class="text-muted">Автор: {{ post.author }} | Категорія: {{ post.category }}</p>
-    <div class="card p-3 my-3">
-        <p>{{ post.content }}</p>
+    <p class="text-muted">Автор: {{ post.user.username }} | Категорія: {{ post.category }}</p>
+
+    <div class="mb-3">
+        <span class="fw-semibold me-1">Теги:</span>
+        {% if post.tags %}
+            {% for tag in post.tags %}
+                <span class="badge rounded-pill bg-primary-subtle text-primary-emphasis border border-primary-subtle me-1">
+                    #{{ tag.name }}
+                </span>
+            {% endfor %}
+        {% else %}
+            <span class="text-muted fst-italic">Тегів немає</span>
+        {% endif %}
     </div>
+
+    <div class="card p-3 my-3">
+        <p class="mb-0">{{ post.content }}</p>
+    </div>
+
     <a href="{{ url_for('posts.update_post', id=post.id) }}" class="btn btn-warning">Редагувати</a>
     <a href="{{ url_for('posts.delete_post', id=post.id) }}" class="btn btn-danger">Видалити</a>
     <a href="{{ url_for('posts.all_posts') }}" class="btn btn-secondary">Назад</a>

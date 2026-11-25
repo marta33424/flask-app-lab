@@ -203,3 +203,196 @@
 2026-11-05 00:01:21,712 [INFO]  * Restarting with stat
 2026-11-05 00:01:22,010 [WARNING]  * Debugger is active!
 2026-11-05 00:01:22,014 [INFO]  * Debugger PIN: 117-103-305
+2026-11-24 22:29:11,165 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-24 22:29:11,165 [INFO] Press CTRL+C to quit
+2026-11-24 22:29:11,168 [INFO]  * Restarting with stat
+2026-11-24 22:29:11,950 [WARNING]  * Debugger is active!
+2026-11-24 22:29:11,956 [INFO]  * Debugger PIN: 129-618-912
+2026-11-24 22:29:45,084 [INFO] 127.0.0.1 - - [24/Nov/2026 22:29:45] "GET /post/create HTTP/1.1" 200 -
+2026-11-24 22:29:45,150 [INFO] 127.0.0.1 - - [24/Nov/2026 22:29:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-11-24 22:29:45,566 [INFO] 127.0.0.1 - - [24/Nov/2026 22:29:45] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-24 22:31:27,674 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:27] "POST /post/create HTTP/1.1" 302 -
+2026-11-24 22:31:27,687 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:27] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 22:31:27,708 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:27] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:31:27,712 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:27] "GET /post/posts/static/css/posts.css HTTP/1.1" 200 -
+2026-11-24 22:31:27,713 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:27] "GET /post/posts/static/img/default.jpg HTTP/1.1" 200 -
+2026-11-24 22:31:31,971 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:31] "GET /post/4 HTTP/1.1" 200 -
+2026-11-24 22:31:31,988 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:31] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:31:50,070 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:50] "GET /post/4 HTTP/1.1" 200 -
+2026-11-24 22:31:50,092 [INFO] 127.0.0.1 - - [24/Nov/2026 22:31:50] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:34:29,020 [INFO] 127.0.0.1 - - [24/Nov/2026 22:34:29] "GET /post/4 HTTP/1.1" 200 -
+2026-11-24 22:34:29,037 [INFO] 127.0.0.1 - - [24/Nov/2026 22:34:29] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:36:49,054 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-24 22:36:49,054 [INFO] Press CTRL+C to quit
+2026-11-24 22:36:49,055 [INFO]  * Restarting with stat
+2026-11-24 22:36:49,827 [WARNING]  * Debugger is active!
+2026-11-24 22:36:49,831 [INFO]  * Debugger PIN: 129-618-912
+2026-11-24 22:36:55,963 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:55] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 22:36:56,053 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:56] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:36:56,054 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:56] "GET /post/posts/static/css/posts.css HTTP/1.1" 304 -
+2026-11-24 22:36:56,055 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:56] "GET /post/posts/static/img/default.jpg HTTP/1.1" 304 -
+2026-11-24 22:36:57,292 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:57] "GET /post/3 HTTP/1.1" 200 -
+2026-11-24 22:36:57,313 [INFO] 127.0.0.1 - - [24/Nov/2026 22:36:57] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:37:00,111 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:00] "GET /post/2 HTTP/1.1" 200 -
+2026-11-24 22:37:00,132 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:00] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:37:03,615 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:03] "GET /post/1 HTTP/1.1" 200 -
+2026-11-24 22:37:03,634 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:03] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:37:05,975 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:05] "GET /post/4 HTTP/1.1" 200 -
+2026-11-24 22:37:05,996 [INFO] 127.0.0.1 - - [24/Nov/2026 22:37:05] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:39:55,402 [INFO]  * Detected change in 'D:\\flask_app_mahyr\\app\\posts\\models.py', reloading
+2026-11-24 22:39:55,605 [INFO]  * Restarting with stat
+2026-11-24 22:39:56,432 [WARNING]  * Debugger is active!
+2026-11-24 22:39:56,437 [INFO]  * Debugger PIN: 129-618-912
+2026-11-24 22:49:07,409 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-24 22:49:07,409 [INFO] Press CTRL+C to quit
+2026-11-24 22:49:07,411 [INFO]  * Restarting with stat
+2026-11-24 22:49:08,240 [WARNING]  * Debugger is active!
+2026-11-24 22:49:08,244 [INFO]  * Debugger PIN: 129-618-912
+2026-11-24 22:49:14,040 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:14] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 22:49:14,121 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:14] "GET /post/posts/static/css/posts.css HTTP/1.1" 304 -
+2026-11-24 22:49:14,123 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:14] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:49:14,127 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:14] "GET /post/posts/static/img/default.jpg HTTP/1.1" 304 -
+2026-11-24 22:49:15,484 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:15] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 22:49:15,503 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:15] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:49:15,504 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:15] "GET /post/posts/static/css/posts.css HTTP/1.1" 304 -
+2026-11-24 22:49:15,504 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:15] "GET /post/posts/static/img/default.jpg HTTP/1.1" 304 -
+2026-11-24 22:49:17,267 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:17] "GET /post/create HTTP/1.1" 200 -
+2026-11-24 22:49:17,284 [INFO] 127.0.0.1 - - [24/Nov/2026 22:49:17] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:50:30,918 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:30] "POST /post/create HTTP/1.1" 302 -
+2026-11-24 22:50:30,923 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:30] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 22:50:30,946 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:30] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 22:50:30,950 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:30] "GET /post/posts/static/css/posts.css HTTP/1.1" 304 -
+2026-11-24 22:50:30,951 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:30] "GET /post/posts/static/img/default.jpg HTTP/1.1" 304 -
+2026-11-24 22:50:32,757 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:32] "GET /post/5 HTTP/1.1" 200 -
+2026-11-24 22:50:32,775 [INFO] 127.0.0.1 - - [24/Nov/2026 22:50:32] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 23:15:47,232 [INFO] BEGIN (implicit)
+2026-11-24 23:15:47,248 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id DESC
+2026-11-24 23:15:47,248 [INFO] [generated in 0.00059s] ()
+2026-11-24 23:16:06,636 [INFO] ROLLBACK
+2026-11-24 23:16:12,133 [INFO] BEGIN (implicit)
+2026-11-24 23:16:12,137 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id DESC
+2026-11-24 23:16:12,137 [INFO] [generated in 0.00030s] ()
+2026-11-24 23:16:12,141 [INFO] SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-24 23:16:12,142 [INFO] [generated in 0.00050s] (5, 4, 3, 2, 1)
+2026-11-24 23:21:39,543 [INFO] ROLLBACK
+2026-11-24 23:21:48,610 [INFO] BEGIN (implicit)
+2026-11-24 23:21:48,622 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts ORDER BY posts.id DESC
+2026-11-24 23:21:48,622 [INFO] [generated in 0.00032s] ()
+2026-11-24 23:21:54,319 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-24 23:21:54,320 [INFO] [generated in 0.00030s] (1,)
+2026-11-24 23:21:54,323 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:21:54,323 [INFO] [generated in 0.00020s] (5,)
+2026-11-24 23:21:54,324 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-24 23:21:54,324 [INFO] [cached since 0.004364s ago] (2,)
+2026-11-24 23:21:54,324 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:21:54,325 [INFO] [cached since 0.001925s ago] (4,)
+2026-11-24 23:21:54,325 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:21:54,325 [INFO] [cached since 0.002695s ago] (3,)
+2026-11-24 23:21:54,326 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:21:54,326 [INFO] [cached since 0.00333s ago] (2,)
+2026-11-24 23:21:54,326 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:21:54,327 [INFO] [cached since 0.003934s ago] (1,)
+2026-11-24 23:23:31,208 [INFO] ROLLBACK
+2026-11-24 23:23:45,071 [INFO] BEGIN (implicit)
+2026-11-24 23:23:45,076 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id, users_1.id AS id_1, users_1.username, users_1.email, users_1.password 
+FROM posts LEFT OUTER JOIN users AS users_1 ON users_1.id = posts.user_id ORDER BY posts.id DESC
+2026-11-24 23:23:45,076 [INFO] [generated in 0.00042s] ()
+2026-11-24 23:23:45,080 [INFO] SELECT post_tags.post_id, tags.id, tags.name 
+FROM post_tags JOIN tags ON tags.id = post_tags.tag_id 
+WHERE post_tags.post_id IN (?, ?, ?, ?, ?)
+2026-11-24 23:23:45,081 [INFO] [generated in 0.00034s] (5, 4, 3, 2, 1)
+2026-11-24 23:36:48,686 [INFO] ROLLBACK
+2026-11-24 23:36:54,242 [INFO] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+2026-11-24 23:36:54,242 [INFO] Press CTRL+C to quit
+2026-11-24 23:36:54,243 [INFO]  * Restarting with stat
+2026-11-24 23:36:54,987 [WARNING]  * Debugger is active!
+2026-11-24 23:36:54,993 [INFO]  * Debugger PIN: 129-618-912
+2026-11-24 23:36:57,913 [INFO] BEGIN (implicit)
+2026-11-24 23:36:57,924 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts 
+WHERE posts.id = ?
+2026-11-24 23:36:57,924 [INFO] [generated in 0.00029s] (5,)
+2026-11-24 23:36:57,937 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-24 23:36:57,938 [INFO] [generated in 0.00029s] (1,)
+2026-11-24 23:36:57,941 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:36:57,941 [INFO] [generated in 0.00020s] (5,)
+2026-11-24 23:36:57,943 [INFO] ROLLBACK
+2026-11-24 23:36:57,944 [INFO] 127.0.0.1 - - [24/Nov/2026 23:36:57] "GET /post/5 HTTP/1.1" 200 -
+2026-11-24 23:36:57,999 [INFO] 127.0.0.1 - - [24/Nov/2026 23:36:57] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 23:36:58,017 [INFO] 127.0.0.1 - - [24/Nov/2026 23:36:58] "GET /favicon.ico HTTP/1.1" 404 -
+2026-11-24 23:36:59,775 [INFO] BEGIN (implicit)
+2026-11-24 23:36:59,776 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts 
+WHERE posts.id = ?
+2026-11-24 23:36:59,776 [INFO] [cached since 1.852s ago] (5,)
+2026-11-24 23:36:59,777 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-24 23:36:59,777 [INFO] [cached since 1.84s ago] (1,)
+2026-11-24 23:36:59,778 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:36:59,778 [INFO] [cached since 1.837s ago] (5,)
+2026-11-24 23:36:59,779 [INFO] ROLLBACK
+2026-11-24 23:36:59,779 [INFO] 127.0.0.1 - - [24/Nov/2026 23:36:59] "GET /post/5 HTTP/1.1" 200 -
+2026-11-24 23:36:59,796 [INFO] 127.0.0.1 - - [24/Nov/2026 23:36:59] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 23:37:00,678 [INFO] BEGIN (implicit)
+2026-11-24 23:37:00,679 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts 
+WHERE posts.is_active = 1 ORDER BY posts.posted DESC
+2026-11-24 23:37:00,679 [INFO] [generated in 0.00025s] ()
+2026-11-24 23:37:00,685 [INFO] ROLLBACK
+2026-11-24 23:37:00,685 [INFO] 127.0.0.1 - - [24/Nov/2026 23:37:00] "GET /post/ HTTP/1.1" 200 -
+2026-11-24 23:37:01,976 [INFO] BEGIN (implicit)
+2026-11-24 23:37:01,977 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users ORDER BY users.id
+2026-11-24 23:37:01,977 [INFO] [generated in 0.00033s] ()
+2026-11-24 23:37:01,978 [INFO] SELECT tags.id, tags.name 
+FROM tags ORDER BY tags.id
+2026-11-24 23:37:01,978 [INFO] [generated in 0.00020s] ()
+2026-11-24 23:37:01,990 [INFO] ROLLBACK
+2026-11-24 23:37:01,991 [INFO] 127.0.0.1 - - [24/Nov/2026 23:37:01] "GET /post/create HTTP/1.1" 200 -
+2026-11-24 23:37:02,013 [INFO] 127.0.0.1 - - [24/Nov/2026 23:37:02] "GET /static/css/style.css HTTP/1.1" 304 -
+2026-11-24 23:41:30,278 [INFO] BEGIN (implicit)
+2026-11-24 23:41:30,279 [INFO] SELECT posts.id, posts.title, posts.content, posts.posted, posts.category, posts.is_active, posts.user_id 
+FROM posts 
+WHERE posts.id = ?
+2026-11-24 23:41:30,279 [INFO] [cached since 272.4s ago] (5,)
+2026-11-24 23:41:30,280 [INFO] SELECT users.id, users.username, users.email, users.password 
+FROM users 
+WHERE users.id = ?
+2026-11-24 23:41:30,280 [INFO] [cached since 272.3s ago] (1,)
+2026-11-24 23:41:30,281 [INFO] SELECT tags.id, tags.name 
+FROM tags, post_tags 
+WHERE ? = post_tags.post_id AND tags.id = post_tags.tag_id
+2026-11-24 23:41:30,281 [INFO] [cached since 272.3s ago] (5,)
+2026-11-24 23:41:30,282 [INFO] ROLLBACK
+2026-11-24 23:41:30,282 [INFO] 127.0.0.1 - - [24/Nov/2026 23:41:30] "GET /post/5 HTTP/1.1" 200 -
+2026-11-24 23:41:30,302 [INFO] 127.0.0.1 - - [24/Nov/2026 23:41:30] "GET /static/css/style.css HTTP/1.1" 304 -

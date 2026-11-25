@@ -34,6 +34,7 @@ def create_app(config_name: str = None) -> Flask:
 
     # Імпорт моделей для реєстрації в метаданих Alembic
     from .posts.models import Post
+    from .users.models import User
     from app.products.models import Product
 
     # Реєстрація блюпринтів

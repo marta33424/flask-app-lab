@@ -12,6 +12,14 @@
         {{ render_field(form.is_active) }}
         {{ render_field(form.publish_date) }}
         {{ render_field(form.category) }}
+        <div class="mb-3">
+            {{ form.author_id.label(class="form-label") }}
+            {{ form.author_id(class="form-select") }}
+        </div>
+        <div class="mb-3">
+            {{ form.tags.label(class="form-label") }}
+            {{ form.tags(class="form-select", multiple=True, size=4) }}
+        </div>
 
         {{ form.submit(class="btn btn-primary mt-3") }}
     </form>

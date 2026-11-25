@@ -7,7 +7,6 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 root_dir = os.path.abspath(os.path.join(basedir, ".."))
 instance_dir = os.path.join(root_dir, "instance")
 
-# Гарантуємо фізичне існування папки instance перед підключенням бази
 os.makedirs(instance_dir, exist_ok=True)
 
 class BaseConfig:
@@ -17,7 +16,7 @@ class BaseConfig:
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
     FLASK_DEBUG = 1
-    # Завжди використовуємо чіткий абсолютний шлях до файлу data.sqlite
+    SQLALCHEMY_ECHO = True
     SQLALCHEMY_DATABASE_URI = os.environ.get(
         "DEV_DATABASE_URL",
         f"sqlite:///{os.path.join(instance_dir, 'data.sqlite')}"
