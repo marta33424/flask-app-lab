@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title or 'Account' }}{% endblock %}
+
+{% block content %}
+<div class="container my-4" style="max-width: 900px;">
+    <div class="p-3 mb-3 text-white rounded d-flex align-items-center justify-content-between"
+        style="background-color: #0078d4;">
+        <h3 class="m-0">Профіль користувача</h3>
+        <h3 class="m-0 bg-dark px-3 py-1 rounded d-flex align-items-center">
+            <i class="bi bi-person-check-fill me-2"></i> {{ username }}
+        </h3>
+    </div>
+
+    <div class="card p-4 bg-white shadow-sm rounded-4">
+        <p class="text-muted mb-2">Ім'я користувача (з сесії): <strong>{{ session.get('username') }}</strong></p>
+        {% if user %}
+            <p class="text-muted mb-2">Email: <strong>{{ user.email }}</strong></p>
+        {% endif %}
+        <div class="mt-3">
+            <a href="{{ url_for('users.logout') }}" class="btn btn-outline-danger btn-sm">Вийти</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -16,7 +16,7 @@ class BaseConfig:
 class DevelopmentConfig(BaseConfig):
     DEBUG = True
     FLASK_DEBUG = 1
-    SQLALCHEMY_ECHO = True
+    SQLALCHEMY_ECHO = False
     SQLALCHEMY_DATABASE_URI = os.environ.get(
         "DEV_DATABASE_URL",
         f"sqlite:///{os.path.join(instance_dir, 'data.sqlite')}"
